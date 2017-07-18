@@ -40,22 +40,15 @@ LOCAL_SRC_FILES := \
  $(LIB_ROOT_REL)/src/ptrarray.c \
  $(LIB_ROOT_REL)/src/bplist.c \
  $(LIB_ROOT_REL)/src/base64.c \
- $(LIB_ROOT_REL)/src/xplist.c
+ $(LIB_ROOT_REL)/src/xplist.c \
+ $(LIB_ROOT_REL)/src/time64.c
 
 LOCAL_C_INCLUDES := \
  $(LIB_ROOT_ABS)/src \
  $(LIB_ROOT_ABS)/include \
- $(LIB_ROOT_ABS)/libcnary/include \
- $(LIB_ROOT_ABS)/../$(LIB_XML_VERSION) \
- $(LIB_ROOT_ABS)/../$(LIB_XML_VERSION)/include \
- $(LIB_ROOT_ABS)/../$(LIB_ICONV_VERSION) \
- $(LIB_ROOT_ABS)/../$(LIB_ICONV_VERSION)/include \
- $(LIB_ROOT_ABS)/../$(LIB_ICONV_VERSION)/lib \
- $(LIB_ROOT_ABS)/../$(LIB_ICONV_VERSION)/libcharset \
- $(LIB_ROOT_ABS)/../$(LIB_ICONV_VERSION)/libcharset/include
+ $(LIB_ROOT_ABS)/libcnary/include
 
 LOCAL_STATIC_LIBRARIES := libcnary
-LOCAL_SHARED_LIBRARIES := libiconv libxml2
 
 LOCAL_MODULE := libplist
 
@@ -93,7 +86,7 @@ LOCAL_C_INCLUDES := \
  $(LIB_ROOT_ABS)/../$(LIB_ICONV_VERSION)/libcharset/include
 
 LOCAL_STATIC_LIBRARIES := libcnary
-LOCAL_SHARED_LIBRARIES := libiconv libxml2 libplist
+LOCAL_SHARED_LIBRARIES := libplist
 
 LOCAL_MODULE := libplist++
 
@@ -122,7 +115,7 @@ LOCAL_C_INCLUDES := \
  $(LIB_ROOT_ABS)/../$(LIB_ICONV_VERSION)/libcharset/include
 
 LOCAL_STATIC_LIBRARIES := libcnary
-LOCAL_SHARED_LIBRARIES := libiconv libxml2 libplist
+LOCAL_SHARED_LIBRARIES := libplist
 
 LOCAL_MODULE := plistutil
 

@@ -1,7 +1,7 @@
 LOCAL_PATH:= $(call my-dir)
 
-include $(LOCAL_PATH)/libiconv.mk
-include $(LOCAL_PATH)/libxml2.mk
+#include $(LOCAL_PATH)/libiconv.mk
+#include $(LOCAL_PATH)/libxml2.mk
 include $(LOCAL_PATH)/libplist.mk
 include $(LOCAL_PATH)/libusbmuxd.mk
 

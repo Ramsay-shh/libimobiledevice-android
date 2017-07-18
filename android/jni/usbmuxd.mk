@@ -12,7 +12,7 @@ LIB_ROOT_ABS:= $(LOCAL_PATH)/../../$(LIB_VERSION)
 
 include $(CLEAR_VARS)
 
-LOCAL_CFLAGS := -O2 -Wall -lpthread -DPACKAGE_STRING=\"1.0.9\" -DPACKAGE_VERSION=\"1.0.9\" -DPACKAGE_NAME=\"usbmuxd\" -DHAVE_LIBIMOBILEDEVICE
+LOCAL_CFLAGS := -O2 -Wall -lpthread -DPACKAGE_STRING=\"1.0.9\" -DPACKAGE_VERSION=\"1.0.9\" -DPACKAGE_NAME=\"usbmuxd\" -DHAVE_LIBIMOBILEDEVICE -DHAVE_CLOCK_GETTIME
 
 LOCAL_SRC_FILES:= \
  $(LIB_ROOT_REL)/src/log.c \
@@ -21,7 +21,7 @@ LOCAL_SRC_FILES:= \
  $(LIB_ROOT_REL)/src/device.c \
  $(LIB_ROOT_REL)/src/main.c \
  $(LIB_ROOT_REL)/src/preflight.c \
- $(LIB_ROOT_REL)/src/usb-linux.c \
+ $(LIB_ROOT_REL)/src/usb.c \
  $(LIB_ROOT_REL)/src/utils.c
 
 LOCAL_C_INCLUDES += \

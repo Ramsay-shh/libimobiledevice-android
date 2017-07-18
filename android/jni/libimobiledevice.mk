@@ -134,7 +134,7 @@ include $(BUILD_EXECUTABLE)
 include $(CLEAR_VARS)
 
 LOCAL_CFLAGS := -DHAVE_OPENSSL
- 
+
 LOCAL_SRC_FILES := \
  $(LIB_ROOT_REL)/tools/idevicepair.c
 
@@ -157,7 +157,7 @@ include $(CLEAR_VARS)
 
 LOCAL_CFLAGS := \
  -DHAVE_OPENSSL
- 
+
 LOCAL_SRC_FILES := \
  $(LIB_ROOT_REL)/tools/idevicedate.c
 
@@ -180,7 +180,7 @@ include $(CLEAR_VARS)
 
 LOCAL_CFLAGS := \
  -DHAVE_OPENSSL
- 
+
 LOCAL_SRC_FILES := \
  $(LIB_ROOT_REL)/tools/idevicediagnostics.c
 
@@ -203,7 +203,7 @@ include $(CLEAR_VARS)
 
 LOCAL_CFLAGS := \
  -DHAVE_OPENSSL
- 
+
 LOCAL_SRC_FILES := \
  $(LIB_ROOT_REL)/tools/idevicescreenshot.c
 
@@ -226,7 +226,7 @@ include $(CLEAR_VARS)
 
 LOCAL_CFLAGS := \
  -DHAVE_OPENSSL
- 
+
 LOCAL_SRC_FILES := \
  $(LIB_ROOT_REL)/tools/idevicesyslog.c
 

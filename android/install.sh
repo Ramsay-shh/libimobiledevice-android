@@ -16,7 +16,7 @@ adb shell su -c "mkdir /var/run"
 
 # Install so
 echo "----------Install so--------------"
-for S in libiconv.so libxml2.so libplist.so libplist++.so libusb.so libusbmuxd.so libcrypto.so libssl.so libimobiledevice.so libzip.so
+for S in libplist.so libplist++.so libusb.so libusbmuxd.so libcrypto.so libssl.so libimobiledevice.so libzip.so
 do
 #  adb shell rm "$PATH_DEVICE_LIB/$S"
   adb push "$PATH_LOCAL_LIB/$S" $PATH_DEVICE_LIB

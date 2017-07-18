@@ -1,9 +1,3 @@
-[submodule "libiconv-android"]
-	path = libiconv-android
-	url = https://github.com/xxDroid/libiconv-android.git
-[submodule "libxml2-android"]
-	path = libxml2-android
-	url = https://github.com/xxDroid/libxml2-android.git
 [submodule "openssl-android"]
 	path = openssl-android
 	url = https://github.com/xxDroid/openssl-android.git
